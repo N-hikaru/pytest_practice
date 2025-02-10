@@ -1,0 +1,7 @@
+環境変数（export で設定した変数）は、現在のシェルセッション内でのみ有効。
+新しいターミナルを開くと、新しいシェルセッションが開始されるため、以前の設定はリセットされる。
+例えば、export PYTHONPATH="/some/path" を設定しても、新しいターミナルではリセットされ、PYTHONPATH は元の状態に戻る。
+
+環境変数を通した後でないとimport(from bank_account import BankAccount)に失敗する
+export PYTHONPATH="$HOME/Desktop/div/pytest_githubactions/src"
+pytest
