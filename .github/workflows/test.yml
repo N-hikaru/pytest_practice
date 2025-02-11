@@ -10,7 +10,7 @@ jobs:
 
     - name: Set up python env
       uses: actions/setup-python@v5
-      whih:
+      with:
         python-version: '3.10'
     
     - name: Install
