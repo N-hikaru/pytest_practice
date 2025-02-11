@@ -25,4 +25,4 @@ jobs:
     - name: Run Test
       run: |
         pytest
-      continue-on-error: true
+      # continue-on-error: true # テストが途中で失敗しても最後まで流れる
